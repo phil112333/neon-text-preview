@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, user-scalable=yes">
+  <title>Neon Text Effect Showcase</title>
+  
+  <!-- Font preloading -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Amanda-Artdesign.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Assalwa.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BadScript-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BarcelonyRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Bayshore.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <style>
+    /* Font definitions */
+    @font-face {
+      font-family: 'Bad Script';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BadScript-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Amanda';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Amanda-Artdesign.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Assalwa';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Assalwa.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Cochocib Script Latin Pro';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/CochocibScriptLatinPro.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Bayshore';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Bayshore.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Barcelony';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BarcelonyRegular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Brat';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Brat.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Gruenewald VA';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/GruenewaldVA.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Courgette';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Courgette-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Hamillton';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Hamillton-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Lovely Valentine';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/LovelyValentine.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Magnificent Supernatural';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/MagnificentSupernatural.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Schadow BT';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/SchadowBT-Roman.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Shadows Into';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/ShadowsIntoLight.woff2') format('woff2');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Quinzey';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Quinzey.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Signature';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Signature.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Rock Salt';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/RockSalt.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Vintage Moon';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Vintage_Moon.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Wild Spirit';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/WildSpirit.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    .neon-showcase-wrapper {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      z-index: 999999 !important;
+      overflow: auto !important;
+    }
+
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      overflow: hidden !important;
+    }
+
+    body .entry-content, body .site-content, body .container, body .wp-block-group, body .elementor {
+      max-width: none !important;
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .neon-showcase-wrapper * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .neon-showcase-wrapper .neon-container {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e) !important;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+      color: white !important;
+      height: 100vh !important;
+      width: 100vw !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    
+    .neon-showcase-wrapper header {
+      text-align: center !important;
+      padding: 15px 20px !important;
+      flex-shrink: 0 !important;
+    }
+    
+    .neon-showcase-wrapper h1 {
+      font-size: 2.2rem !important;
+      margin-bottom: 8px !important;
+      font-weight: 800 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 2px !important;
+      text-shadow: 0 0 12px rgba(255, 0, 200, 0.7) !important;
+      background: linear-gradient(90deg, #ff00cc, #ff0066, #cc00ff) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-size: 300% 300% !important;
+    }
+    
+    .neon-showcase-wrapper .subtitle {
+      font-size: 1rem !important;
+      color: #d0c8e6 !important;
+      max-width: 800px !important;
+      margin: 0 auto !important;
+      line-height: 1.5 !important;
+    }
+    
+    .neon-showcase-wrapper .controls {
+      background: rgba(35, 30, 55, 0.85) !important;
+      border-radius: 10px !important;
+      padding: 15px !important;
+      margin: 0 auto 15px !important;
+      max-width: 1200px !important;
+      width: 95% !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      flex-shrink: 0 !important;
+    }
+    
+    .neon-showcase-wrapper .control-group {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 25px !important;
+      justify-content: center !important;
+    }
+    
+    .neon-showcase-wrapper .input-group {
+      flex: 1 !important;
+      min-width: 300px !important;
+      max-width: 600px !important;
+    }
+    
+    .neon-showcase-wrapper .color-group {
+      flex: 1 !important;
+      min-width: 300px !important;
+      max-width: 700px !important;
+    }
+    
+    .neon-showcase-wrapper label {
+      display: block !important;
+      font-size: 0.95rem !important;
+      margin-bottom: 8px !important;
+      font-weight: 500 !important;
+      color: #e0daf0 !important;
+      text-align: left !important;
+    }
+    
+    .neon-showcase-wrapper #textInput {
+      width: 100% !important;
+      padding: 10px 15px !important;
+      font-size: 1.1rem !important;
+      border-radius: 10px !important;
+      border: 2px solid #6a6380 !important;
+      background: rgba(20, 15, 35, 0.9) !important;
+      color: white !important;
+      outline: none !important;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+      height: 60px !important;
+      resize: none !important;
+      font-family: inherit !important;
+    }
+    
+    .neon-showcase-wrapper #textInput:focus {
+      border-color: #fd0192 !important;
+    }
+    
+    .neon-showcase-wrapper #textInput::placeholder {
+      color: #a098b8 !important;
+    }
+    
+    .neon-showcase-wrapper .color-numbers {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 12px !important;
+      margin-bottom: 5px !important;
+      justify-content: center !important;
+    }
+    
+    .neon-showcase-wrapper .color-number {
+      width: 35px !important;
+      text-align: center !important;
+      font-size: 0.8rem !important;
+      color: #d0c8e6 !important;
+      font-weight: bold !important;
+    }
+    
+    .neon-showcase-wrapper .color-boxes {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 12px !important;
+      margin-top: 8px !important;
+      justify-content: center !important;
+    }
+    
+    .neon-showcase-wrapper .color-box {
+      width: 35px !important;
+      height: 35px !important;
+      border-radius: 50% !important;
+      cursor: pointer !important;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+      border: 2px solid rgba(255, 255, 255, 0.7) !important;
+    }
+    
+    .neon-showcase-wrapper .color-box.active {
+      border: 3px solid white !important;
+    }
+    
+    .neon-showcase-wrapper .output {
+      flex-grow: 1 !important;
+      width: 95% !important;
+      max-width: 1800px !important;
+      margin: 0 auto !important;
+      padding: 15px !important;
+      overflow-y: auto !important;
+      margin-bottom: 15px !important;
+    }
+    
+    .neon-showcase-wrapper #fontList {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+      gap: 35px !important;
+    }
+    
+    .neon-showcase-wrapper .font-item {
+      display: flex !important;
+      align-items: center !important;
+      gap: 15px !important;
+    }
+    
+    .neon-showcase-wrapper .font-number {
+      font-size: 1.5rem !important;
+      font-weight: 800 !important;
+      color: #c5c0d3 !important;
+      font-family: Arial, sans-serif !important;
+      min-width: 40px !important;
+      text-align: right !important;
+    }
+    
+    .neon-showcase-wrapper .font-name {
+      font-weight: 500 !important;
+      letter-spacing: 0.5px !important;
+      font-size: 2.5rem !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+      hyphens: auto !important;
+      line-height: 1.4 !important;
+      word-break: break-word !important;
+      flex-grow: 1 !important;
+      color: white !important;
+      text-shadow: 
+        0 0 1px white,
+        0 0 3px white,
+        0 0 10px currentColor,
+        0 0 20px currentColor,
+        0 0 35px currentColor,
+        0 0 45px currentColor !important;
+    }
+
+    /* Specific fonts with larger size - #3, #4, #5, #8, #11, #12, #16, #19 */
+    .neon-showcase-wrapper .font-name.font-3,
+    .neon-showcase-wrapper .font-name.font-4,
+    .neon-showcase-wrapper .font-name.font-5,
+    .neon-showcase-wrapper .font-name.font-8,
+    .neon-showcase-wrapper .font-name.font-11,
+    .neon-showcase-wrapper .font-name.font-12,
+    .neon-showcase-wrapper .font-name.font-16,
+    .neon-showcase-wrapper .font-name.font-19 {
+      font-size: 3.2rem !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="neon-showcase-wrapper">
+    <div class="neon-container">
+      <header>
+        <h1>Neon Text Effect Showcase</h1>
+        <p class="subtitle">Enter any text and choose a neon color to see it in 20 different fonts</p>
+      </header>
+      
+      <div class="controls">
+        <div class="control-group">
+          <div class="input-group">
+            <label for="textInput">Enter Text:</label>
+            <textarea id="textInput" placeholder="Type your text here..." rows="1">Neon Sign</textarea>
+          </div>
+          
+          <div class="color-group">
+            <label>Select Neon Color:</label>
+            <div class="color-numbers">
+              <div class="color-number">#1</div>
+              <div class="color-number">#2</div>
+              <div class="color-number">#3</div>
+              <div class="color-number">#4</div>
+              <div class="color-number">#5</div>
+              <div class="color-number">#6</div>
+              <div class="color-number">#7</div>
+              <div class="color-number">#8</div>
+              <div class="color-number">#9</div>
+            </div>
+            <div class="color-boxes">
+              <div class="color-box active" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
+              <div class="color-box" style="background-color: #FD0192;" data-color="#FD0192"></div>
+              <div class="color-box" style="background-color: #F4051C;" data-color="#F4051C"></div>
+              <div class="color-box" style="background-color: #FAEB08;" data-color="#FAEB08"></div>
+              <div class="color-box" style="background-color: #F78A07;" data-color="#F78A07"></div>
+              <div class="color-box" style="background-color: #0002F3;" data-color="#0002F3"></div>
+              <div class="color-box" style="background-color: #0698E1;" data-color="#0698E1"></div>
+              <div class="color-box" style="background-color: #08E94F;" data-color="#08E94F"></div>
+              <div class="color-box" style="background-color: #A301E0;" data-color="#A301E0"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="output">
+        <div class="font-container" id="fontList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Font list
+    const fonts = [
+      'Bad Script',
+      'Amanda',
+      'Assalwa',
+      'Cochocib Script Latin Pro',
+      'Bayshore',
+      'Barcelony',
+      'Brat',
+      'Gruenewald VA',
+      'Courgette',
+      'Hamillton',
+      'Lovely Valentine',
+      'Magnificent Supernatural',
+      'Schadow BT',
+      'Shadows Into',
+      'Quinzey',
+      'Signature',
+      'Rock Salt',
+      'Vintage Moon',
+      'Wild Spirit',
+      'Impact'
+    ];
+    
+    const fontListContainer = document.getElementById("fontList");
+    const textInput = document.getElementById("textInput");
+    const colorBoxes = document.querySelectorAll(".color-box");
+    
+    let currentColor = "#FFFFFF";
+    
+    // Render fonts
+    function renderFonts() {
+      const text = textInput.value || "Neon Sign";
+      console.log('Rendering fonts with text:', text, 'color:', currentColor);
+      
+      fontListContainer.innerHTML = '';
+      
+      fonts.forEach((font, index) => {
+        const fontDiv = document.createElement("div");
+        fontDiv.classList.add("font-item");
+        
+        const numberDiv = document.createElement("div");
+        numberDiv.classList.add("font-number");
+        numberDiv.textContent = `#${index + 1}`;
+        fontDiv.appendChild(numberDiv);
+        
+        const textDiv = document.createElement("div");
+        textDiv.classList.add("font-name", "neon-effect", `font-${index + 1}`);
+        textDiv.textContent = text;
+        
+        // Force set styles
+        textDiv.style.setProperty('color', 'white', 'important');
+        textDiv.style.setProperty('font-weight', '500', 'important');
+        
+        // Adjust white glow intensity based on color - further reduce for white neon
+        const whiteGlow = currentColor === '#FFFFFF' ? 
+          '0 0 0.1px white, 0 0 0.4px white' :  // White neon: further reduce white glow
+          '0 0 0.5px white, 0 0 1.5px white';   // Other colors: maintain current white glow
+          
+        textDiv.style.setProperty('text-shadow', `${whiteGlow}, 0 0 10px ${currentColor}, 0 0 20px ${currentColor}, 0 0 35px ${currentColor}, 0 0 45px ${currentColor}`, 'important');
+        textDiv.style.setProperty('font-family', `'${font}', sans-serif`, 'important');
+        
+        fontDiv.appendChild(textDiv);
+        fontListContainer.appendChild(fontDiv);
+      });
+      
+      console.log('Fonts rendered successfully');
+    }
+    
+    // Update neon effect
+    function updateNeonEffect() {
+      console.log('Updating neon effect with color:', currentColor);
+      const textElements = document.querySelectorAll('.font-name');
+      textElements.forEach(el => {
+        el.style.setProperty('color', 'white', 'important');
+        el.style.setProperty('font-weight', '500', 'important');
+        
+        // Adjust white glow intensity based on color - further reduce for white neon
+        const whiteGlow = currentColor === '#FFFFFF' ? 
+          '0 0 0.1px white, 0 0 0.4px white' :  // White neon: further reduce white glow
+          '0 0 0.5px white, 0 0 1.5px white';   // Other colors: maintain current white glow
+          
+        el.style.setProperty('text-shadow', `${whiteGlow}, 0 0 10px ${currentColor}, 0 0 20px ${currentColor}, 0 0 35px ${currentColor}, 0 0 45px ${currentColor}`, 'important');
+      });
+      console.log('Neon effect updated for', textElements.length, 'elements');
+    }
+    
+    // Text input event - add debounce optimization to reduce lag
+    let inputTimeout;
+    textInput.addEventListener("input", function() {
+      console.log('Text input changed');
+      // Clear previous timer
+      clearTimeout(inputTimeout);
+      // Delay 300ms before rendering to avoid frequent rendering causing lag
+      inputTimeout = setTimeout(() => {
+        renderFonts();
+      }, 300);
+    });
+    
+    // Color selection event
+    colorBoxes.forEach(colorBox => {
+      colorBox.addEventListener("click", (e) => {
+        console.log('Color box clicked:', e.target);
+        colorBoxes.forEach(box => box.classList.remove("active"));
+        colorBox.classList.add("active");
+        currentColor = colorBox.getAttribute("data-color");
+        console.log('Color changed to:', currentColor);
+        
+        // Delayed update to ensure DOM stability
+        setTimeout(() => {
+          updateNeonEffect();
+        }, 50);
+      });
+    });
+    
+    // Force render function - solve mobile delay display issue
+    function forceRender() {
+      const container = document.getElementById("fontList");
+      if (container) {
+        container.style.display = 'none';
+        container.offsetHeight; // Force reflow
+        container.style.display = 'grid';
+        renderFonts();
+      }
+    }
+    
+    // Initialize after fonts loaded
+    function initializeAfterFontsLoad() {
+      console.log('Initializing fonts...');
+      renderFonts();
+      // Additional force render for mobile
+      if (/Mobi|Android/i.test(navigator.userAgent)) {
+        setTimeout(forceRender, 200);
+        setTimeout(forceRender, 800);
+      }
+    }
+    
+    // Multiple initialization for compatibility
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initializeAfterFontsLoad);
+    } else {
+      initializeAfterFontsLoad();
+    }
+    
+    // Additional delayed initialization to ensure mobile font display
+    setTimeout(initializeAfterFontsLoad, 100);
+    setTimeout(initializeAfterFontsLoad, 500);
+    setTimeout(initializeAfterFontsLoad, 1000);
+    
+    // Initialize again after window loaded
+    window.addEventListener('load', () => {
+      setTimeout(initializeAfterFontsLoad, 100);
+    });
+    
+    // Re-initialize when page visibility changes (solve mobile issues)
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) {
+        setTimeout(initializeAfterFontsLoad, 100);
+      }
+    });
+    
+    // Re-initialize when page focus changes
+    window.addEventListener('focus', () => {
+      setTimeout(initializeAfterFontsLoad, 100);
+    });
+    
+    // Mobile touch event listener - solve touch to display issue
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      document.addEventListener('touchstart', () => {
+        setTimeout(forceRender, 50);
+      }, { once: true });
+      
+      // Force render when page scrolls
+      window.addEventListener('scroll', () => {
+        setTimeout(forceRender, 100);
+      }, { once: true });
+      
+      // Re-render when device orientation changes
+      window.addEventListener('orientationchange', () => {
+        setTimeout(() => {
+          forceRender();
+        }, 300);
+      });
+    }
+  </script>
+</body>
+</html>
