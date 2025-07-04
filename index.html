@@ -6,80 +6,262 @@
   <title>Neon Text Effect Showcase</title>
   
   <!-- Font preloading -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Amanda-Artdesign.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Assalwa.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BadScript-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BarcelonyRegular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Bayshore.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/1%20Alexa_CN.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/2%20Bayview_CN.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/3%20Amsterdam_CN.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/4%20Greenworld_CN.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/5%20NewCursive_CN.woff2" as="font" type="font/woff2" crossorigin>
   
   <style>
     /* Font definitions */
     @font-face {
-      font-family: 'Bad Script';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BadScript-Regular.woff2') format('woff2');
+      font-family: 'Alexa CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/1%20Alexa_CN.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Amanda';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Amanda-Artdesign.woff2') format('woff2');
+      font-family: 'Bayview CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/2%20Bayview_CN.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Assalwa';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Assalwa.woff2') format('woff2');
+      font-family: 'Amsterdam CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/3%20Amsterdam_CN.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Cochocib Script Latin Pro';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/CochocibScriptLatinPro.woff2') format('woff2');
+      font-family: 'Greenworld CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/4%20Greenworld_CN.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Bayshore';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Bayshore.woff2') format('woff2');
+      font-family: 'NewCursive CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/5%20NewCursive_CN.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Barcelony';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BarcelonyRegular.woff2') format('woff2');
+      font-family: 'Barcelona CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/6%20Barcelona_CN.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Brat';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Brat.woff2') format('woff2');
+      font-family: 'Vintage';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/7%20Vintage.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Gruenewald VA';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/GruenewaldVA.woff2') format('woff2');
+      font-family: 'Amanda CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/8%20Amanda_CN.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Courgette';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Courgette-Regular.woff2') format('woff2');
+      font-family: 'Freespirit CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/9%20Freespirit_CN.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Hamillton';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Hamillton-Regular.woff2') format('woff2');
+      font-family: 'Chelsea CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/10%20Chelsea_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Austin CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/12%20Austin_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Neonscript CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/13%20Neonscript_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Freehand CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/14%20Freehand_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'LoveNote';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/15%20LoveNote.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Northshore CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/16%20Northshore_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Beachfront CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/17%20Beachfront_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Royalty CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/18%20Royalty_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Rocket CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/19%20Rocket_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'WildScript CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/20%20WildScript_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Avante CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/21%20Avante_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Bauhaus';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/22%20Bauhaus.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Monaco CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/23%20Monaco_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Waikiki CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/24%20Waikiki_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Florence';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/25%20Florence.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Typewriter CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/26%20Typewriter_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Buttercup CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/27%20Buttercup_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Melbourne CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/28%20Melbourne_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'NeoTokyo CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/29%20NeoTokyo_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'LazySunday';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/30%20LazySunday.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'LosAngeles';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/31%20LosAngeles.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'SanDiego';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/32%20SanDiego.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'NeonLite';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/33%20NeonLite.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Neontrace CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/34%20Neontrace_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Simplicity';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/35%20Simplicity.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Venetian CN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/36%20Venetian_CN.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'SignatureCN';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-font-2/11%20SignatureCN-SignatureCN.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
@@ -87,62 +269,6 @@
     @font-face {
       font-family: 'Lovely Valentine';
       src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/LovelyValentine.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Magnificent Supernatural';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/MagnificentSupernatural.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Schadow BT';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/SchadowBT-Roman.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Shadows Into';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/ShadowsIntoLight.woff2') format('woff2');
-      font-weight: 300;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Quinzey';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Quinzey.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Signature';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Signature.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Rock Salt';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/RockSalt.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Vintage Moon';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Vintage_Moon.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Wild Spirit';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/WildSpirit.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
@@ -372,15 +498,23 @@
         0 0 45px currentColor !important;
     }
 
-    /* Specific fonts with larger size - #3, #4, #5, #8, #11, #12, #16, #19 */
+    /* Specific fonts with larger size */
+    .neon-showcase-wrapper .font-name.font-1,
+    .neon-showcase-wrapper .font-name.font-2,
     .neon-showcase-wrapper .font-name.font-3,
     .neon-showcase-wrapper .font-name.font-4,
     .neon-showcase-wrapper .font-name.font-5,
     .neon-showcase-wrapper .font-name.font-8,
+    .neon-showcase-wrapper .font-name.font-10,
     .neon-showcase-wrapper .font-name.font-11,
     .neon-showcase-wrapper .font-name.font-12,
+    .neon-showcase-wrapper .font-name.font-14,
+    .neon-showcase-wrapper .font-name.font-15,
     .neon-showcase-wrapper .font-name.font-16,
-    .neon-showcase-wrapper .font-name.font-19 {
+    .neon-showcase-wrapper .font-name.font-20,
+    .neon-showcase-wrapper .font-name.font-27,
+    .neon-showcase-wrapper .font-name.font-35,
+    .neon-showcase-wrapper .font-name.font-36 {
       font-size: 3.2rem !important;
     }
   </style>
@@ -390,7 +524,7 @@
     <div class="neon-container">
       <header>
         <h1>Neon Text Effect Showcase</h1>
-        <p class="subtitle">Enter any text and choose a neon color to see it in 20 different fonts</p>
+        <p class="subtitle">Enter any text and choose a neon color to see it in 37 different fonts</p>
       </header>
       
       <div class="controls">
@@ -415,9 +549,9 @@
               <div class="color-number">#10</div>
             </div>
             <div class="color-boxes">
-              <div class="color-box active" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
+              <div class="color-box" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
               <div class="color-box" style="background-color: #FBFDC8;" data-color="#FBFDC8"></div>
-              <div class="color-box" style="background-color: #FD0192;" data-color="#FD0192"></div>
+              <div class="color-box active" style="background-color: #FD0192;" data-color="#FD0192"></div>
               <div class="color-box" style="background-color: #F4051C;" data-color="#F4051C"></div>
               <div class="color-box" style="background-color: #FAEB08;" data-color="#FAEB08"></div>
               <div class="color-box" style="background-color: #F78A07;" data-color="#F78A07"></div>
@@ -437,35 +571,52 @@
   </div>
 
   <script>
-    // Font list
+    // Font list - 按照仓库序号1-36排列，保留的原11号字体放到第37位
     const fonts = [
-      'Bad Script',
-      'Amanda',
-      'Assalwa',
-      'Cochocib Script Latin Pro',
-      'Bayshore',
-      'Barcelony',
-      'Brat',
-      'Gruenewald VA',
-      'Courgette',
-      'Hamillton',
-      'Lovely Valentine',
-      'Magnificent Supernatural',
-      'Schadow BT',
-      'Shadows Into',
-      'Quinzey',
-      'Signature',
-      'Rock Salt',
-      'Vintage Moon',
-      'Wild Spirit',
-      'Impact'
+      'Alexa CN',          // 仓库 #1
+      'Bayview CN',        // 仓库 #2  
+      'Amsterdam CN',      // 仓库 #3
+      'Greenworld CN',     // 仓库 #4
+      'NewCursive CN',     // 仓库 #5
+      'Barcelona CN',      // 仓库 #6
+      'Vintage',           // 仓库 #7
+      'Amanda CN',         // 仓库 #8
+      'Freespirit CN',     // 仓库 #9
+      'Chelsea CN',        // 仓库 #10
+      'SignatureCN',       // 仓库 #11
+      'Austin CN',         // 仓库 #12
+      'Neonscript CN',     // 仓库 #13
+      'Freehand CN',       // 仓库 #14
+      'LoveNote',          // 仓库 #15
+      'Northshore CN',     // 仓库 #16
+      'Beachfront CN',     // 仓库 #17
+      'Royalty CN',        // 仓库 #18
+      'Rocket CN',         // 仓库 #19
+      'WildScript CN',     // 仓库 #20
+      'Avante CN',         // 仓库 #21
+      'Bauhaus',           // 仓库 #22
+      'Monaco CN',         // 仓库 #23
+      'Waikiki CN',        // 仓库 #24
+      'Florence',          // 仓库 #25
+      'Typewriter CN',     // 仓库 #26
+      'Buttercup CN',      // 仓库 #27
+      'Melbourne CN',      // 仓库 #28
+      'NeoTokyo CN',       // 仓库 #29
+      'LazySunday',        // 仓库 #30
+      'LosAngeles',        // 仓库 #31
+      'SanDiego',          // 仓库 #32
+      'NeonLite',          // 仓库 #33
+      'Neontrace CN',      // 仓库 #34
+      'Simplicity',        // 仓库 #35
+      'Venetian CN',       // 仓库 #36
+      'Lovely Valentine'   // 第37位：保留的原11号字体
     ];
     
     const fontListContainer = document.getElementById("fontList");
     const textInput = document.getElementById("textInput");
     const colorBoxes = document.querySelectorAll(".color-box");
     
-    let currentColor = "#FFFFFF";
+    let currentColor = "#FD0192";
     
     // Render fonts
     function renderFonts() {
